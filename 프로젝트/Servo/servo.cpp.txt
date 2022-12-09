@@ -1,0 +1,18 @@
+#include <Arduino.h>
+
+#define SERVO_OFF 0
+#define SERVO_ON 1
+
+
+class Servo {
+  private:
+    int pin;
+    byte state;
+
+  public:
+    Servo(int pin);
+    void init();
+    void on();
+    void off();
+    byte getState();
+};
